@@ -4,7 +4,7 @@
 .animate-on-scroll {
   opacity: 0;
   transform: translateY(20px); /* Slide down effect, adjust as needed */
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 /* Define animation when elements come into view */
