@@ -131,7 +131,7 @@
 
   <section id="do_section" class="do_section layout_padding">
     <div class="container">
-      <div class="heading_container">
+      <div class="heading_container animate-on-scroll animate-on-scroll.show">
         <h2>
           My Skills
         </h2>
@@ -141,7 +141,7 @@
           and database management effectively.
         </p>
       </div>
-      <div class="do_container">
+      <div class="do_container animate-on-scroll animate-on-scroll.show">
         <div class="box">
           <div class="img-box">
             <img class="cir-img" src="images/d-1.png" alt="">
@@ -211,13 +211,13 @@
     <div class="container">
       <div class="row">
         <div class="col-md-5">
-          <div class="img-box">
+          <div class="img-box animate-on-scroll animate-on-scroll.show">
             <img src="images/who-img.jpg" alt="">
           </div>
         </div>
         <div class="col-md-7">
           <div class="detail-box">
-            <div class="heading_container">
+            <div class="heading_container animate-on-scroll animate-on-scroll.show">
               <h2>
                 About me
               </h2>
@@ -230,7 +230,7 @@
               excited about taking on new challenges and turning innovative ideas into reality. Welcome to my portfolio,
               where you'll see my tech journey.
             </p>
-            <div>
+            <div class=" animate-on-scroll animate-on-scroll.show">
               <a href="https://www.linkedin.com/in/dhiyanesh03/">
                 My Linkedin
               </a>
@@ -250,7 +250,7 @@
   <!-- work section -->
   <section id="portfolio" class="work_section layout_padding">
     <div class="container">
-      <div class="heading_container">
+      <div class="heading_container animate-on-scroll animate-on-scroll.show">
         <h2>
           My Works
         </h2>
@@ -261,8 +261,8 @@
       <div class="album py-5 ">
         <div class="container">
 
-          <div class="row">
-            <div class="col-md-4">
+          <div class="row ">
+            <div class="col-md-4 animate-on-scroll animate-on-scroll.show">
               <div class="card mb-4 shadow-sm">
                 <img src="images\parkme.png" class="bd-placeholder-img card-img-top" alt="Your Image Description">
                 <div class="card-body">
@@ -279,7 +279,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 animate-on-scroll animate-on-scroll.show">
               <div class="card mb-4 shadow-sm">
                 <img src="images\docscanner.png" class="bd-placeholder-img card-img-top" alt="Your Image Description">
                 <div class="card-body">
@@ -296,7 +296,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 animate-on-scroll animate-on-scroll.show">
               <div class="card mb-4 shadow-sm">
                 <img src="images\face detection.png" class="bd-placeholder-img card-img-top"
                   alt="Your Image Description">
@@ -314,7 +314,7 @@
               </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-4 animate-on-scroll animate-on-scroll.show">
               <div class="card mb-4 shadow-sm">
                 <img src="images\kfc.png" class="bd-placeholder-img card-img-top" alt="Your Image Description">
                 <div class="card-body">
@@ -331,7 +331,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 animate-on-scroll animate-on-scroll.show">
               <div class="card mb-4 shadow-sm">
                 <img src="images\car sales.png" class="bd-placeholder-img card-img-top" alt="Your Image Description">
                 <div class="card-body">
@@ -346,7 +346,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 animate-on-scroll animate-on-scroll.show">
               <div class="card mb-4 shadow-sm">
                 <img src="images\first.png" class="bd-placeholder-img card-img-top" alt="Your Image Description">
                 <div class="card-body">
@@ -376,12 +376,12 @@
   <!-- client section -->
   <section class="client_section">
     <div class="container">
-      <div class="heading_container">
+      <div class="heading_container  animate-on-scroll animate-on-scroll.show">
         <h2>
           Certificates
         </h2>
       </div>
-      <div class="carousel-wrap carousl carousel">
+      <div class="carousel-wrap carousl carousel animate-on-scroll animate-on-scroll.show">
 
         <div class="owl-carousel">
           <div class="item">
@@ -523,7 +523,7 @@
       </h2>
     </div> <br><br>
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-12">
         <address>
           <strong>Name:</strong>
           Dhiyanesh S<br> <br>
@@ -535,23 +535,7 @@
          +91 9092571266
         </address>
       </div>
-      <div class="col-md-6">
-        <form>
-          <div class="form-group">
-            <label for="name">Your Name:</label>
-            <input type="text" class="form-control" id="name">
-          </div>
-          <div class="form-group">
-            <label for="email">Your Email:</label>
-            <input type="email" class="form-control" id="email">
-          </div>
-          <div class="form-group">
-            <label for="message">Message:</label>
-            <textarea class="form-control" id="message" rows="4"></textarea>
-          </div>
-          <button type="submit" class="btn btn-dark">Submit</button>
-        </form>
-      </div>
+      
     </div>
   </div>
 
@@ -636,6 +620,34 @@
       lastScrollTop = scrollTop;
     });
   </script>
+
+  <script>
+    // Function to check if an element is in the viewport
+    function isElementInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+    // Function to add the "show" class to elements in viewport
+    function handleScroll() {
+        const elements = document.querySelectorAll('.animate-on-scroll');
+        elements.forEach((el) => {
+            if (isElementInViewport(el)) {
+                el.classList.add('show');
+            }
+        });
+    }
+
+    // Listen for scroll events and trigger the animation
+    window.addEventListener('scroll', handleScroll);
+    // Initial check in case some elements are already in the viewport on page load
+    window.addEventListener('load', handleScroll);
+</script>
   
   
   <!-- end owl carousel script -->
