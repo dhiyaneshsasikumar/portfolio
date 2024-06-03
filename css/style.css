@@ -7,6 +7,10 @@
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
+.btn-group buttons:hover{
+  color: white;
+}
+
 /* Define animation when elements come into view */
 .animate-on-scroll.show {
   opacity: 1;
